@@ -10,9 +10,9 @@ const root=path.resolve(__dirname,'../')
 
 
 function entries() {
-    // let jsDir = './src/js/page'
-    let jsDir = path.resolve(__dirname, '../src/js/page')
-    let entryFiles = glob.sync(jsDir + '/*.js')
+    // let jsDir = './src/js/lib'
+    let jsDir = path.resolve(__dirname, '../src/page')
+    let entryFiles = glob.sync(jsDir + '/**/*.js')
     let map = {};
 
     for (let i = 0; i < entryFiles.length; i++) {
@@ -23,8 +23,8 @@ function entries() {
     return map;
 }
 function newHtmlWebpackPlugins(){
-    let jsDir = path.resolve(__dirname, '../src/html/page')
-    let htmls = glob.sync(jsDir + '/*.html')
+    let jsDir = path.resolve(__dirname, '../src/page')
+    let htmls = glob.sync(jsDir + '/**/*.html')
     let plugins=[]
 
     for (let i = 0; i < htmls.length; i++) {

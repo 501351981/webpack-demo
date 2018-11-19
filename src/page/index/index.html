@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="测试,测试123">
-    <title>测试</title>
+    <title>首页</title>
 </head>
 <body>
 <!--引入通用的导航部分-->
-<%=require('html-withimg-loader!../tpl/navbar.html')%>
+<%=require('html-withimg-loader!../../html/tpl/navbar.html')%>
 
 <!--页面的正式内容在这里-->
 <div id="app">
-    测试页面的内容在这里
+    <p>首页的内容在这里</p>
+    <img src="${require('../../img/react.png')}" width="50" height="50">
 </div>
 
 <!--引入通用的底部栏-->
-<%=require('html-withimg-loader!../tpl/footer.html')%>
+<%=require('html-withimg-loader!../../html/tpl/footer.html')%>
 </body>
 </html>

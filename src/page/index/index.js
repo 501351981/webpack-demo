@@ -1,4 +1,4 @@
-import '../../css/page/index.less'
+import './index.less'
 
 let $=require('jquery')
 
