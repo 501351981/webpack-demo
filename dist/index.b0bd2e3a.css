@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#app {
+  min-height: 300px;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background: green;
+  padding-left: 10px;
+  list-style: none;
+}
+.navbar li {
+  height: 60px;
+  margin-right: 10px;
+}
+.navbar li a {
+  height: 60px;
+  line-height: 60px;
+  color: white;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=index.b0bd2e3a.css.map*/
